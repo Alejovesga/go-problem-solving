@@ -4,7 +4,7 @@ Repositorio de ejercicios prácticos para aprender y dominar Go desde cero.
 
 ## 🎯 Objetivo
 
-Este repositorio documenta mi proceso de aprendizaje de Go con el objetivo de ingresar a una big tech como Mercado Libre. El enfoque es aprender resolviendo problemas reales, progresando desde la sintaxis básica hasta arquitecturas limpias, concurrencia y sistemas distribuidos.
+Este repositorio documenta mi proceso de aprendizaje de Go con el objetivo de ingresar a una big tech. El enfoque es aprender resolviendo problemas reales, progresando desde la sintaxis básica hasta arquitecturas limpias, concurrencia y sistemas distribuidos.
 
 **Stack objetivo:** Go · Clean Architecture · Docker · Kubernetes
 
@@ -97,5 +97,6 @@ go run VariablesProblems/problem1/main.go
 - [ ] Kubernetes
 
 ---
+
 
 > ⭐ Los problemas marcados con esta estrella siguen el estilo de plataformas competitivas como HackerRank, LeetCode o UVA, con casos de prueba definidos.
