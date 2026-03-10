@@ -1,7 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strings"
 )
 
@@ -10,14 +12,17 @@ func main() {
 }
 
 func passwordValidator() string {
-	var password, notValid string
-	fmt.Scan(&password, &notValid)
+	var password string
+
+	reader := bufio.NewReader(os.Stdin)
+	password, _ = reader.ReadString('\n')
+	password = strings.TrimSuffix(password, "\n")
 
 	if len(password) >= 8 {
+		if strings.Contains(password, " ") {
+			return "invalid"
+		}
 		if strings.ContainsAny(password, "0123456789") {
-			if len(notValid) > 0 {
-				return "invalid"
-			}
 			return "valid"
 		}
 		return "invalid"

@@ -20,7 +20,7 @@ func calculateImc() string {
 	} else if imc <= 25 {
 		return "Normal weight"
 	} else if imc < 30 {
-		return "over weight"
+		return "overweight"
 	}
 	return "Obesity"
 }

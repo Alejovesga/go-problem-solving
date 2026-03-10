@@ -12,9 +12,9 @@ func greater() int {
 	fmt.Print("Enter three numbers: ")
 	fmt.Scan(&a, &b, &c)
 
-	if a > b && b > c {
+	if a >= b && a >= c {
 		return a
-	} else if b > c {
+	} else if b >= c && b >= a {
 		return b
 	}
 	return c
