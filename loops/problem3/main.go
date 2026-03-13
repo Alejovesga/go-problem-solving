@@ -13,7 +13,5 @@ func regresive() {
 		fmt.Println(x)
 		x--
 	}
-	if x == 0 {
-		fmt.Println("Go!")
-	}
+	fmt.Println("Go!")
 }
