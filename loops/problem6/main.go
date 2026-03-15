@@ -7,20 +7,19 @@ func main() {
 }
 
 func primal() {
-	var x, count int
+	var x int
 	fmt.Scan(&x)
-	for i := 1; i*i <= x; i++ {
+	if x < 2 {
+		fmt.Println(false)
+		return
+	}
+	isPrime := true
+	for i := 2; i*i <= x; i++ {
 		if x%i == 0 {
-			count++
-			if i != x/i {
-				count++
-			}
+			isPrime = false
+			break
 		}
 	}
-	fmt.Println(count)
-	if count == 2 {
-		fmt.Println(true)
-	} else {
-		fmt.Println(false)
-	}
+	fmt.Println(isPrime)
+
 }
